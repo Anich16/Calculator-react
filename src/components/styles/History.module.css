@@ -1,0 +1,19 @@
+.history {
+    position: relative;
+}
+
+.historyItem {
+    text-align: right;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.result {
+    font-weight: 900;
+}
+
+.deleteIcon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}

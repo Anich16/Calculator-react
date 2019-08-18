@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import style from "./styles/Header.module.css";
 
 const Header = (props) => {
     return (
-        <div className="navBar">
+        <div className={style.navBar}>
             <FontAwesomeIcon icon={['fab', 'calculator']}/>
-            <p className="title">{props.title}</p>
+            <p className={style.title}>{props.title}</p>
         </div>
     )
 };

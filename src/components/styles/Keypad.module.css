@@ -1,0 +1,25 @@
+.keypad {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.row:last-of-type {
+    margin-bottom: 0;
+}
+
+.buttonNumber,
+.buttonSymbol,
+.buttonCE,
+.buttonC,
+.buttonBackspace {
+    width: 80px;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 800;
+
+}
