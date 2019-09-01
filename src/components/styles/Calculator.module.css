@@ -5,3 +5,8 @@
     background-color: #e9ddc1;
     color: #000;
 }
+
+.display {
+    height: 50px;
+    padding: 10px 10px 0;
+}

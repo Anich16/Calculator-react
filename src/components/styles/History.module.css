@@ -3,9 +3,7 @@
 }
 
 .historyItem {
-    text-align: right;
-    padding-right: 10px;
-    margin-bottom: 15px;
+
 }
 
 .result {
@@ -16,4 +14,18 @@
     position: absolute;
     top: 5px;
     left: 5px;
+}
+
+.button {
+    width: 100%;
+    text-align: right;
+    padding-right: 15px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+}
+
+.button:active {
+    background-color: aqua;
+    border: 1px solid #000;
 }

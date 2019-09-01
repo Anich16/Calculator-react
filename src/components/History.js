@@ -10,13 +10,13 @@ const History = (props) => {
             {
                 props.history.map((i, index) => {
                     return (
-                        <div className={style.historyItem} key="index">
-                            <dutton className="button">
+                        <div className={style.historyItem} key={index}>
+                            <button className={style.button} onClick={() => props.onSelected(i)}>
                                 <div className="textBlock">
                                     <div>{i.expression}&nbsp;=</div>
                                     <div className={style.result}>{i.result}</div>
                                 </div>
-                            </dutton>
+                            </button>
                             <div className="history-trash" onClick={props.onClearHistory}>
                                 <div className={style.deleteIcon}>
                                     <FontAwesomeIcon icon={faTrash} color="red" size="2x"/>

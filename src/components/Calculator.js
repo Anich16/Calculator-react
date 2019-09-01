@@ -4,6 +4,7 @@ import style from "./styles/Calculator.module.css";
 import Keypad from "./Keypad";
 import CalculatorEngine from "./CalculatorEngine";
 import Display from "./Display";
+import ControlPanel from "./ControlPanel";
 
 const calculator = new CalculatorEngine();
 
@@ -169,8 +170,16 @@ class Calculator extends React.Component {
                 <div className={style.display}>
                     <Display value={this.state.value} expression={this.state.expression}/>
                 </div>
-                <History history={this.state.history}/>
-                <Keypad onDigit={this.handleOnDigit}
+
+                <ControlPanel anyHistory={this.state.history.length > 0}
+                              onToggleHistory={this.handleOnToggleHistory}/>
+                {
+                    this.state.showHistory &&
+                    <History history={this.state.history} onClearHistory={this.handleOnClearHistory}
+                             onSelected={this.handleOnHistorySelected}/>
+                }
+                { !this.state.showHistory &&
+                    <Keypad onDigit={this.handleOnDigit}
                         onAdd={this.handleOnAdd}
                         onSubtract={this.handleOnSubtract}
                         onDivide={this.handleOnDivide}
@@ -181,6 +190,7 @@ class Calculator extends React.Component {
                         onClearAll={this.handleOnClearAll}
                         onDelete={this.handleOnDelete}
                         onToggleSign={this.handleOnToggleSign}/>
+                }
             </div>
         )
     }
