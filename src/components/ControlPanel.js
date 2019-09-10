@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import style from "./styles/ControlPanel.module.css"
 
 const ControlPanel = (props) => {
     return (
         <div className="">
-            <button className="" disabled={!props.anyHistory} onClick={props.onToggleHistory}>
+            <button className={style.buttonHistory} disabled={!props.anyHistory} onClick={props.onToggleHistory}>
                 History
             </button>
         </div>

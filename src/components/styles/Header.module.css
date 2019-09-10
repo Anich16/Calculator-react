@@ -1,5 +1,6 @@
 .navBar {
  background-color: brown;
+    width: 100%;
 }
 
 .title {
@@ -7,5 +8,5 @@
     font-size: 24px;
     text-align: center;
     padding: 10px 0;
-    font-weight: 600;
+    font-weight: 800;
 }

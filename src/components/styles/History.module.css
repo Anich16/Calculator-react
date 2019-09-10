@@ -1,5 +1,6 @@
 .history {
     position: relative;
+    padding-bottom: 15px;
 }
 
 .historyItem {
@@ -23,6 +24,8 @@
     background-color: transparent;
     border: 1px solid transparent;
     margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .button:active {

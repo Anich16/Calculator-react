@@ -1,5 +1,4 @@
 .calculatorBlock {
-    width: 400px;
     border: 1px solid #000;
     margin: 0 auto;
     background-color: #e9ddc1;
@@ -8,5 +7,7 @@
 
 .display {
     height: 50px;
-    padding: 10px 10px 0;
+    padding: 10px 15px 0;
+    margin: 10px 5px;
+    background: #fff;
 }

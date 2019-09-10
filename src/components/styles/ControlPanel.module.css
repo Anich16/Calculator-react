@@ -1,0 +1,15 @@
+.buttonHistory {
+    margin: 0 5px 10px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: brown;
+    font-weight: 700;
+    transition: 0.5s linear all;
+}
+
+.buttonHistory:hover {
+    background: dimgrey;
+    color: #fff;
+}

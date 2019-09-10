@@ -17,8 +17,9 @@ class Calculator extends React.Component {
             value: '',
             history: [
                 {
-                    expression: "2+2",
-                    result: "4"
+                    expression: "",
+                    equally: " = ",
+                    result: ""
                 }
             ],
             showHistory: false

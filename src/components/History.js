@@ -13,7 +13,7 @@ const History = (props) => {
                         <div className={style.historyItem} key={index}>
                             <button className={style.button} onClick={() => props.onSelected(i)}>
                                 <div className="textBlock">
-                                    <div>{i.expression}&nbsp;=</div>
+                                    <div>{i.expression}</div>
                                     <div className={style.result}>{i.result}</div>
                                 </div>
                             </button>

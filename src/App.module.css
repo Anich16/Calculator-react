@@ -1,6 +1,10 @@
 
 .app {
   margin: 10px auto 0;
-  width: 600px;
+  width: 400px;
+}
+
+.mainContent {
+  width: 100%;
 }
 

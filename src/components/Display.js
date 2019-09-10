@@ -7,7 +7,6 @@ const Display = (props) => {
         <div className={style.displayBlock}>
             <div className="">{props.expression}</div>
             <div className="">{props.value}</div>
-
         </div>
     )
 };
